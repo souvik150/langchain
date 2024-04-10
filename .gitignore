@@ -1,1 +1,5 @@
 .env
+
+# ignore __pychache__ and .pyc files
+*.pyc
+__pycache__/

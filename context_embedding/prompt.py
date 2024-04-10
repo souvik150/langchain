@@ -9,7 +9,7 @@ from redundant_filter_retriever import RedundantFilterRetriever
 # langchain.debug = True
 
 load_dotenv()
-
+ 
 chat = ChatOpenAI()
 embeddings = OpenAIEmbeddings()
 
@@ -42,6 +42,7 @@ chain = RetrievalQA.from_chain_type(
     chain_type="stuff"
 )
 
+print("----------------------------------------------------")
 result = chain.run("What is an interesting fact about the English language?")
 
 print(result)
